@@ -1,0 +1,10 @@
+.classpath
+.project
+.cproject
+.~lock.*
+*.swp
+~*
+.settings/
+obj/
+bin/
+libs/
