@@ -27,7 +27,7 @@ public class MyApplication extends Application {
 
 	public static DaoMaster getDaoMaster(Context context) {
 		if (daoMaster == null) {
-			OpenHelper helper = new DaoMaster.DevOpenHelper(context, DB_NAME,
+			OpenHelper helper = new MySQLiteOpenHelper(context, DB_NAME,
 					null);
 			daoMaster = new DaoMaster(helper.getWritableDatabase());
 		}

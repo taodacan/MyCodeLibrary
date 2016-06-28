@@ -73,10 +73,4 @@ public class UserEntity {
         this.time = time;
     }
 
-	@Override
-	public String toString() {
-		return "UserEntity [id=" + id + ", name=" + name + ", age=" + age
-				+ ", sex=" + sex + ", time=" + time + "]";
-	}
-    
 }

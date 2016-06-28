@@ -27,8 +27,8 @@ public class ExampleDaoGenerator
     public static void main(String[] args) throws Exception
     {
         Schema schema = new Schema(4, "com.cn.speedchat.greendao");
-//        addNote(schema);
-//        addSession(schema);
+        addNote(schema);
+        addSession(schema);
 //        addReplay(schema);
 //        addCustomerOrder(schema);
         addUser(schema);
@@ -43,7 +43,7 @@ public class ExampleDaoGenerator
         note.addIntProperty("age").notNull();
         //true代表男，false代表女
         note.addBooleanProperty("sex").notNull();   
-        note.addStringProperty("time").notNull(); 
+        note.addStringProperty("time").notNull();
     }
     
     /**
