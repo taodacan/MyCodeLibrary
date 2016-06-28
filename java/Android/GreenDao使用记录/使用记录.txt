@@ -1,0 +1,102 @@
+1、导入generator 运行JAVA项目生成Dao文件  JAVA项目中存在注释。。
+
+2、更改DaoMaster文件中的内部类OpenHelper 可以更改数据库路径
+代码如下：
+ public static abstract class OpenHelper extends SQLiteOpenHelper {
+
+        public OpenHelper(Context context, String name, CursorFactory factory) {
+            super(new ContextWrapper(context){
+            	
+            	/** 
+                 * 获得数据库路径，如果不存在，则创建对象对象 
+                 *  
+                 * @param name 
+                 * @param mode 
+                 * @param factory 
+                 */  
+            	@Override
+            	public File getDatabasePath(String name) {
+            		// 判断是否存在sd卡  
+                    boolean sdExist = android.os.Environment.MEDIA_MOUNTED.equals(android.os.Environment.getExternalStorageState());  
+                    if (!sdExist) {// 如果不存在,  
+                        Log.e("SD卡管理：", "SD卡不存在，请加载SD卡");  
+                        return null;  
+                    } else {// 如果存在  
+                            // 获取sd卡路径  
+                        String dbDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath() + "/Dao/Database/";  // 数据库所在目录  
+                        
+                        String dbPath = dbDir + name;// 数据库路径  
+                        
+                        // 判断目录是否存在，不存在则创建该目录  
+                        File dirFile = new File(dbDir);  
+                        if (!dirFile.exists())  
+                            dirFile.mkdirs();  
+  
+                        // 数据库文件是否创建成功  
+                        boolean isFileCreateSuccess = false;  
+                        // 判断文件是否存在，不存在则创建该文件  
+                        File dbFile = new File(dbPath);  
+                        if (!dbFile.exists()) {  
+                            try {  
+                                isFileCreateSuccess = dbFile.createNewFile();// 创建文件  
+                            } catch (IOException e) {  
+                                e.printStackTrace();  
+                            }  
+                        } else  
+                            isFileCreateSuccess = true;  
+                        // 返回数据库文件对象  
+                        if (isFileCreateSuccess)  
+                            return dbFile;  
+                        else  
+                            return super.getDatabasePath(name);  
+                    }  
+            	}
+            	
+            	/** 
+                 * 重载这个方法，是用来打开SD卡上的数据库的，android 2.3及以下会调用这个方法。 
+                 *  
+                 * @param name 
+                 * @param mode 
+                 * @param factory 
+                 */  
+            	@Override
+            	public SQLiteDatabase openOrCreateDatabase(String name,
+            			int mode, CursorFactory factory) {
+            		return SQLiteDatabase.openOrCreateDatabase(getDatabasePath(name), null);
+            	}
+            	
+            	/** 
+                 * Android 4.0会调用此方法获取数据库。 
+                 *  
+                 * @see android.content.ContextWrapper#openOrCreateDatabase(java.lang.String, 
+                 *      int, 
+                 *      android.database.sqlite.SQLiteDatabase.CursorFactory, 
+                 *      android.database.DatabaseErrorHandler) 
+                 * @param name 
+                 * @param mode 
+                 * @param factory 
+                 * @param errorHandler 
+                 */ 
+            	@SuppressLint("NewApi")
+				@Override
+            	public SQLiteDatabase openOrCreateDatabase(String name,
+            			int mode, CursorFactory factory,
+            			DatabaseErrorHandler errorHandler) {
+            		return SQLiteDatabase.openOrCreateDatabase(getDatabasePath(name), null);
+            	}
+            }, name, factory, SCHEMA_VERSION);
+        }
+
+        @Override
+        public void onCreate(SQLiteDatabase db) {
+            Log.i("greenDAO", "Creating tables for schema version " + SCHEMA_VERSION);
+            createAllTables(db, false);
+        }
+    }
+
+
+3、官方推荐将取得DaoMaster对象的方法放到Application层这样避免多次创建生成Session对象，
+在Application实现得到DaoMaster和DaoSession的方法，实现如下，新建一个MyApplication文件继承自Application：
+详细见GreenDaoTest工程Demo
+
+
