@@ -99,4 +99,4 @@
 在Application实现得到DaoMaster和DaoSession的方法，实现如下，新建一个MyApplication文件继承自Application：
 详细见GreenDaoTest工程Demo
 
-
+具体操作见Demo

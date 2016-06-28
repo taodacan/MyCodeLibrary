@@ -9,9 +9,16 @@
     tools:context=".MainActivity" >
     
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btn_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试" />
+        android:text="添加" />
+    
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_toRightOf="@id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询" />
 
 </RelativeLayout>
