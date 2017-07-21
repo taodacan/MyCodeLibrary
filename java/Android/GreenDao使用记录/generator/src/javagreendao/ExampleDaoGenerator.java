@@ -26,13 +26,35 @@ public class ExampleDaoGenerator
 	 */
     public static void main(String[] args) throws Exception
     {
-        Schema schema = new Schema(4, "com.cn.speedchat.greendao");
-        addNote(schema);
-        addSession(schema);
+        Schema schema = new Schema(1, "com.cekj.didimain.db.greendao");
+//        addNote(schema);
+//        addSession(schema);
 //        addReplay(schema);
 //        addCustomerOrder(schema);
-        addUser(schema);
+        addCall(schema);
+//        addLine(schema);
         new DaoGenerator().generateAll(schema, "src-gen");
+    }
+    
+    private static void addCall(Schema schema){
+    	Entity note = schema.addEntity("CallEntity");
+    	note.addIdProperty().autoincrement();
+    	//订单ID
+    	note.addIntProperty("orderId").notNull();
+    	//订单类型
+    	note.addStringProperty("orderType").notNull();
+    	//订单时间
+    	note.addStringProperty("orderTime").notNull();
+    	//订单描述
+    	note.addStringProperty("description").notNull();
+    }
+    
+    private static void addLine(Schema schema){
+    	Entity note = schema.addEntity("LineEntity");
+    	note.addIdProperty().autoincrement();
+    	note.addStringProperty("number").notNull();
+    	note.addStringProperty("beginAddr").notNull();
+    	note.addStringProperty("endAddr").notNull();
     }
     
     private static void addUser(Schema schema)  

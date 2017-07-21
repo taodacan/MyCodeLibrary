@@ -14,15 +14,15 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-	private DBManager dBManager; // 定义一个DBHelper对象，用他来对数据库进行增删改查
-
+	private DBManagerHelper dBManager; // 定义一个DBHelper对象，用他来对数据库进行增删改查
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
 		// 获取数据库管理实例
-		dBManager = DBManager.getInstance(this);
+		dBManager = DBManagerHelper.getInstance(this);
 
 		Button mButton = (Button) findViewById(R.id.btn_add);
 		mButton.setOnClickListener(new OnClickListener() {

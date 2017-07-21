@@ -13,26 +13,26 @@ import android.content.Context;
 import android.util.Log;
 
 /**
- * 创建一个DBManager的管理类，这个管理类写了自己封装的一些方法，内容如下
+ * 创建一个DBManager的管理帮助类，这个帮助类写了自己封装的一些方法，内容如下
  * 
  * @author Administrator
  * 
  */
-public class DBManager {
-	private static final String TAG = DBManager.class.getSimpleName();
-	private static DBManager instance;
+public class DBManagerHelper {
+	private static final String TAG = DBManagerHelper.class.getSimpleName();
+	private static DBManagerHelper instance;
 	private static Context appContext;
 	private DaoSession mDaoSession;
 
 	UserEntityDao userEntityDao;
 
-	private DBManager() {
+	private DBManagerHelper() {
 	}
 
-	// 单例模式，DBHelper只初始化一次
-	public static DBManager getInstance(Context context) {
+	// 单例模式，DBManagerHelper只初始化一次
+	public static DBManagerHelper getInstance(Context context) {
 		if (instance == null) {
-			instance = new DBManager();
+			instance = new DBManagerHelper();
 			if (appContext == null) {
 				appContext = context.getApplicationContext();
 			}
