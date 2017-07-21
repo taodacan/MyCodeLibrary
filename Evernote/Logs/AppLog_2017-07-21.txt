@@ -1,0 +1,268 @@
+********
+* The Activity Log contains a detailed list of the steps the Evernote application performs,
+* as well as information about your account and your device. Your Note titles, tags,
+* Notebook names and occasionally Note content also may be included. We treat your
+* Activity Log data as confidential, and the terms of our Privacy Policy apply (http://evernote.com/privacy).
+*
+* You may remove anything you do not want to send us.
+********
+
+
+Log opened on 2017/07/21 12:06:25 (UTC+8:00)
+
+12:06:25 [16172] Command line: E:\tool\Evernote\Evernote.exe
+12:06:25 [16172] Evernote for Windows 6.5.4.4720 (304720) Public
+12:06:25 [16172] Client info: Evernote Windows/304720 (zh-CN, DDL); Windows/10.0.15063 (Win64);
+12:06:25 [16172] Common Editor: ce-1.0.29.936-develop-win (37b21f0e0ce4cb64b49ea2234d305d4f61c18559)
+12:06:25 [16172] Bootstrap info: Evernote (loadedBundled)
+12:06:25 [16172] Created SendTo shortcut:
+12:06:25 [16172] * link: "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\SendTo\Evernote.lnk"
+12:06:25 [16172] * path: "E:\tool\Evernote\Evernote.exe"
+12:06:25 [4188] Requesting bootstrap info from "app.yinxiang.com" (zh-CN)
+12:06:26 [4188] Bootstrap info: request to "app.yinxiang.com" returned profiles: Evernote-China,Evernote
+12:06:26 [4188] Bootstrap info: Evernote-China,Evernote (loadedFresh)
+12:06:26 [4188] Set the service host to "app.yinxiang.com"
+12:06:26 [16172] Setting the service host to "app.yinxiang.com"
+12:06:27 [14960] Requesting OpenID availability: https://app.yinxiang.com/openid/enabled
+12:06:27 [14960] * enabled: NO
+12:06:47 [16172] 0% Authenticating user "1098087960@qq.com"
+12:06:48 [16172] Registered session count: 1, last session: 2017/07/21 12:00:00
+12:06:54 [16172] Loaded session count: 0, last session: (none)
+12:06:54 [16192] Sync rate configuration changed:
+12:06:54 [16192] * syncStateIntervalMillis=900000
+12:06:54 [16192] * updateNoteWhenIdleForMillis=30000
+12:06:54 [16192] * updateNoteDuringEditIntervalMillis=60000
+12:06:54 [16172] CInAppMessageUpSellImpl::CInAppMessageUpSellImpl: UtilityStoreClient update begin
+12:06:55 [16172] UpSell: TsdEligibility: Show:1 NewCheck:2017/07/22 12:06:55 Type:Regular Timing:Suitable:AfterFLE
+12:06:55 [16172] CInAppMessageUpSellImpl::CInAppMessageUpSellImpl: UtilityStoreClient update complete
+12:06:56 [16912] Updating Premium account limits
+12:06:57 [16172] Opened database: C:\Users\Administrator\Evernote\Databases\1098087960#app.yinxiang.com.exb (984 KB Fixed 21.2 GB free)
+12:06:57 [16912] Premium account limits have been updated
+12:06:57 [16172] * email: 1098087960@qq.com
+12:06:57 [16172] * user: 18400284
+12:06:57 [7020] Client synchronization started
+12:06:57 [8008] 0% Loaded updateCount: 0
+12:06:57 [8008] Registered session count: 1, last session: 2017/07/21 12:00:00
+12:06:58 [8008] 0% Usage Metrics: sessionCount=1
+12:06:58 [8008] 0% SyncState: devices used: 1
+12:06:58 [8008] 0% Client updateCount: 0, server updateCount: 1
+12:06:58 [8008] 0% Retrieving list of changes from the server
+12:06:58 [8008] 100% * saved 1 sync chunks, updateCount=1
+12:06:58 [8008] 100% Receiving account changes
+12:06:58 [8008] 100% * expunge 0 notebooks, 0 notes, 0 tags, 0 searches, 0 linked notebooks
+12:06:58 [8008] 100% * update 1 notebooks, 0 notes, 0 resources, 0 tags, 0 searches, 0 linked notebooks
+12:06:58 [8008] 0% Waiting for 1 base writer tasks
+12:06:58 [5408] 0% Synchronizing 1 notebook
+12:06:58 [5408] 100% Creating local notebook "我的第一个笔记本"
+12:06:58 [5408] 100% * guid={9B55A808-D3FB-4221-8A18-BCDC15C150FC}
+12:06:58 [8008] 100% Waiting for 1 base writer tasks done
+12:06:58 [16172] Communication Engine client handler failed to retrieve cached events from local data store
+12:06:58 [8008] 100% Waiting for 1 sync tasks
+12:06:59 [9364] 100% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:06:59 [8008] 100% Done waiting for 1 sync tasks
+12:06:59 [7020] Client synchronization finished, status: complete
+12:06:59 [7020] * elapsed time: 1s
+12:06:59 [7020] * 1 item received
+12:08:48 [2576] AutoUpdate: checking for update at: https://update.evernote.com/public/ENWin6/update.xml
+12:08:49 [2576] Received status code 200 when accessing URL https://update.evernote.com/public/ENWin6/update.xml
+12:08:49 [2576] AutoUpdate: no update found, remote revision is the same as the local revision (304720)
+12:08:50 [2576] Received status code 200 when accessing URL https://update.evernote.com/public/ENWin6/ReleaseNotes_6.5.4.4720_zh-CN.html
+12:11:59 [12276] Client synchronization started
+12:11:59 [12100] 0% Loaded updateCount: 1
+12:11:59 [12100] 0% Usage Metrics: sessionCount=0
+12:11:59 [12100] 0% SyncState: devices used: 1
+12:11:59 [12100] 0% Client is up to date with the server, updateCount: 1
+12:12:00 [1988] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:12:00 [12100] 0% Waiting for 1 sync tasks
+12:12:00 [12100] 0% Done waiting for 1 sync tasks
+12:12:00 [12276] Client synchronization finished, status: complete
+12:12:00 [12276] * elapsed time: 1s
+12:12:48 [12192] AutoUpdate: checking for update at: https://update.evernote.com/public/ENWin6/update.xml
+12:12:49 [12192] Received status code 200 when accessing URL https://update.evernote.com/public/ENWin6/update.xml
+12:12:49 [12192] AutoUpdate: no update found, remote revision is the same as the local revision (304720)
+12:12:49 [12192] Received status code 200 when accessing URL https://update.evernote.com/public/ENWin6/ReleaseNotes_6.5.4.4720_zh-CN.html
+12:17:01 [5196] Client synchronization started
+12:17:01 [7024] 0% Loaded updateCount: 1
+12:17:01 [7024] 0% Usage Metrics: sessionCount=0
+12:17:01 [7024] 0% SyncState: devices used: 1
+12:17:01 [7024] 0% Client is up to date with the server, updateCount: 1
+12:17:01 [7024] 0% Waiting for 1 sync tasks
+12:17:02 [6456] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:17:02 [7024] 0% Done waiting for 1 sync tasks
+12:17:02 [5196] Client synchronization finished, status: complete
+12:17:02 [5196] * elapsed time: 0s
+12:22:02 [16276] Client synchronization started
+12:22:02 [14524] 0% Loaded updateCount: 1
+12:22:02 [14524] 0% Usage Metrics: sessionCount=0
+12:22:02 [14524] 0% SyncState: devices used: 1
+12:22:02 [14524] 0% Client is up to date with the server, updateCount: 1
+12:22:02 [14108] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:22:02 [14524] 0% Waiting for 1 sync tasks
+12:22:02 [14524] 0% Done waiting for 1 sync tasks
+12:22:02 [16276] Client synchronization finished, status: complete
+12:27:02 [2332] Client synchronization started
+12:27:03 [16520] 0% Loaded updateCount: 1
+12:27:03 [16520] 0% Usage Metrics: sessionCount=0
+12:27:03 [16520] 0% SyncState: devices used: 1
+12:27:03 [16520] 0% Client is up to date with the server, updateCount: 1
+12:27:03 [16028] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:27:03 [16520] 0% Waiting for 1 sync tasks
+12:27:03 [16520] 0% Done waiting for 1 sync tasks
+12:27:03 [2332] Client synchronization finished, status: complete
+12:27:03 [2332] * elapsed time: 1s
+12:32:04 [2480] Client synchronization started
+12:32:04 [9236] 0% Loaded updateCount: 1
+12:32:05 [9236] 0% Usage Metrics: sessionCount=0
+12:32:05 [9236] 0% SyncState: devices used: 1
+12:32:05 [9236] 0% Client is up to date with the server, updateCount: 1
+12:32:05 [9236] 0% Waiting for 1 sync tasks
+12:32:05 [10408] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:32:05 [9236] 0% Done waiting for 1 sync tasks
+12:32:05 [2480] Client synchronization finished, status: complete
+12:32:05 [2480] * elapsed time: 0s
+12:37:05 [11804] Client synchronization started
+12:37:05 [756] 0% Loaded updateCount: 1
+12:37:05 [756] 0% Usage Metrics: sessionCount=0
+12:37:05 [756] 0% SyncState: devices used: 1
+12:37:05 [756] 0% Client is up to date with the server, updateCount: 1
+12:37:05 [756] 0% Waiting for 1 sync tasks
+12:37:06 [13724] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:37:06 [756] 0% Done waiting for 1 sync tasks
+12:37:06 [11804] Client synchronization finished, status: complete
+12:37:06 [11804] * elapsed time: 1s
+12:42:06 [7900] Client synchronization started
+12:42:06 [16040] 0% Loaded updateCount: 1
+12:42:06 [16040] 0% Usage Metrics: sessionCount=0
+12:42:06 [16040] 0% SyncState: devices used: 1
+12:42:06 [16040] 0% Client is up to date with the server, updateCount: 1
+12:42:06 [16040] 0% Waiting for 1 sync tasks
+12:42:07 [4884] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:42:07 [16040] 0% Done waiting for 1 sync tasks
+12:42:07 [7900] Client synchronization finished, status: complete
+12:42:07 [7900] * elapsed time: 0s
+12:47:07 [3996] Client synchronization started
+12:47:07 [6120] 0% Loaded updateCount: 1
+12:47:07 [6120] 0% Usage Metrics: sessionCount=0
+12:47:07 [6120] 0% SyncState: devices used: 1
+12:47:07 [6120] 0% Client is up to date with the server, updateCount: 1
+12:47:07 [6120] 0% Waiting for 1 sync tasks
+12:47:07 [16940] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:47:07 [6120] 0% Done waiting for 1 sync tasks
+12:47:08 [3996] Client synchronization finished, status: complete
+12:47:08 [3996] * elapsed time: 0s
+12:52:07 [10856] Client synchronization started
+12:52:07 [15756] 0% Loaded updateCount: 1
+12:52:07 [15756] 0% Usage Metrics: sessionCount=0
+12:52:07 [15756] 0% SyncState: devices used: 1
+12:52:07 [15756] 0% Client is up to date with the server, updateCount: 1
+12:52:07 [15756] 0% Waiting for 1 sync tasks
+12:52:07 [14484] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:52:07 [15756] 0% Done waiting for 1 sync tasks
+12:52:07 [10856] Client synchronization finished, status: complete
+12:57:08 [16996] Client synchronization started
+12:57:08 [10744] 0% Loaded updateCount: 1
+12:57:09 [10744] 0% Usage Metrics: sessionCount=0
+12:57:09 [10744] 0% SyncState: devices used: 1
+12:57:09 [10744] 0% Client is up to date with the server, updateCount: 1
+12:57:09 [10744] 0% Waiting for 1 sync tasks
+12:57:09 [1620] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+12:57:09 [10744] 0% Done waiting for 1 sync tasks
+12:57:09 [16996] Client synchronization finished, status: complete
+12:57:09 [16996] * elapsed time: 0s
+13:02:09 [11600] Client synchronization started
+13:02:09 [15632] 0% Loaded updateCount: 1
+13:02:10 [15632] 0% Usage Metrics: sessionCount=0
+13:02:10 [15632] 0% SyncState: devices used: 1
+13:02:10 [15632] 0% Client is up to date with the server, updateCount: 1
+13:02:10 [15632] 0% Waiting for 1 sync tasks
+13:02:10 [1616] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+13:02:10 [15632] 0% Done waiting for 1 sync tasks
+13:02:10 [11600] Client synchronization finished, status: complete
+13:02:10 [11600] * elapsed time: 1s
+13:07:10 [7288] Client synchronization started
+13:07:10 [7572] 0% Loaded updateCount: 1
+13:07:10 [7572] 0% Usage Metrics: sessionCount=0
+13:07:10 [7572] 0% SyncState: devices used: 1
+13:07:10 [7572] 0% Client is up to date with the server, updateCount: 1
+13:07:10 [7572] 0% Waiting for 1 sync tasks
+13:07:11 [4472] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+13:07:11 [7572] 0% Done waiting for 1 sync tasks
+13:07:11 [7288] Client synchronization finished, status: complete
+13:07:11 [7288] * elapsed time: 0s
+13:12:11 [17272] Client synchronization started
+13:12:11 [7052] 0% Loaded updateCount: 1
+13:12:11 [7052] 0% Usage Metrics: sessionCount=0
+13:12:11 [7052] 0% SyncState: devices used: 1
+13:12:11 [7052] 0% Client is up to date with the server, updateCount: 1
+13:12:12 [7052] 0% Waiting for 1 sync tasks
+13:12:12 [15192] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+13:12:12 [7052] 0% Done waiting for 1 sync tasks
+13:12:12 [17272] Client synchronization finished, status: complete
+13:12:12 [17272] * elapsed time: 0s
+13:17:12 [2296] Client synchronization started
+13:17:12 [3056] 0% Loaded updateCount: 1
+13:17:12 [3056] 0% Usage Metrics: sessionCount=0
+13:17:12 [3056] 0% SyncState: devices used: 1
+13:17:12 [3056] 0% Client is up to date with the server, updateCount: 1
+13:17:12 [3056] 0% Waiting for 1 sync tasks
+13:17:13 [7100] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+13:17:13 [3056] 0% Done waiting for 1 sync tasks
+13:17:13 [2296] Client synchronization finished, status: complete
+13:17:13 [2296] * elapsed time: 1s
+13:20:43 [16172] Registered session count: 1, last session: 2017/07/21 13:15:00
+13:21:04 [16172] EmailLastPrompted updated. EmailLastConfirmed = Never, EmailLastPrompted = 2017/07/21 13:21:04 (UTC+8:00).
+13:21:04 [16172] Showing email verification dialog. EmailLastConfirmed = Never, EmailLastPrompted = 2017/07/21 13:21:04 (UTC+8:00).
+13:22:14 [7360] Client synchronization started
+13:22:14 [2640] 0% Loaded updateCount: 1
+13:22:14 [2640] 0% Usage Metrics: sessionCount=1
+13:22:14 [2640] 0% SyncState: devices used: 1
+13:22:14 [2640] 0% Client is up to date with the server, updateCount: 1
+13:22:14 [2640] 0% Waiting for 1 sync tasks
+13:22:15 [12156] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+13:22:15 [2640] 0% Done waiting for 1 sync tasks
+13:22:15 [7360] Client synchronization finished, status: complete
+13:22:15 [7360] * elapsed time: 1s
+13:27:16 [13656] Client synchronization started
+13:27:16 [11072] 0% Loaded updateCount: 1
+13:27:16 [11072] 0% Usage Metrics: sessionCount=0
+13:27:16 [11072] 0% SyncState: devices used: 1
+13:27:16 [11072] 0% Client is up to date with the server, updateCount: 1
+13:27:16 [11072] 0% Waiting for 1 sync tasks
+13:27:17 [14508] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+13:27:17 [11072] 0% Done waiting for 1 sync tasks
+13:27:17 [13656] Client synchronization finished, status: complete
+13:27:17 [13656] * elapsed time: 0s
+13:32:17 [16680] Client synchronization started
+13:32:17 [3908] 0% Loaded updateCount: 1
+13:32:17 [3908] 0% Usage Metrics: sessionCount=0
+13:32:17 [3908] 0% SyncState: devices used: 1
+13:32:17 [3908] 0% Client is up to date with the server, updateCount: 1
+13:32:17 [3908] 0% Waiting for 1 sync tasks
+13:32:17 [844] 0% Image download failed, error=HTTP_HEADER_NOT_FOUND, statusCode=404,  statusText=Not Found, url=https://app.yinxiang.com/shard/s15/user/18400284/photo?size=450
+13:32:17 [3908] 0% Done waiting for 1 sync tasks
+13:32:18 [16680] Client synchronization finished, status: complete
+13:32:18 [16680] * elapsed time: 1s
+13:32:25 [16172] Registered session count: 1, last session: 2017/07/21 13:30:00
+13:33:11 [16172] Saved session count: 1, last session: 2017/07/21 13:30:00
+13:33:11 [16172] Closed database: C:\Users\Administrator\Evernote\Databases\1098087960#app.yinxiang.com.exb (984 KB +0 B)
+13:33:11 [16172] Changing Evernote files location to: F:\MyCodeLibrary\Evernote
+
+Log closed on 2017/07/21 13:33:11 (UTC+8:00)
+
+
+Log opened on 2017/07/21 13:33:14 (UTC+8:00)
+
+13:33:14 [16172] Changed Evernote files location to: F:\MyCodeLibrary\Evernote
+13:33:14 [16172] Bootstrap info: Evernote-China,Evernote (loadedDatabase)
+13:33:14 [16172] Sync rate configuration changed:
+13:33:14 [16172] * syncStateIntervalMillis=0
+13:33:14 [16172] * updateNoteWhenIdleForMillis=0
+13:33:14 [16172] * updateNoteDuringEditIntervalMillis=0
+13:33:14 [16172] Loaded session count: 1, last session: 2017/07/21 13:30:00
+13:33:14 [16172] Opened database: F:\MyCodeLibrary\Evernote\Databases\1098087960#app.yinxiang.com.exb (984 KB Fixed 69.2 GB free)
+13:33:14 [16172] * email: 1098087960@qq.com
+13:33:14 [16172] * user: 18400284
+13:33:14 [9028] Sync rate configuration changed:
+13:33:14 [9028] * syncStateIntervalMillis=900000
+13:33:14 [9028] * updateNoteWhenIdleForMillis=30000
+13:33:14 [9028] * updateNoteDuringEditIntervalMillis=60000
